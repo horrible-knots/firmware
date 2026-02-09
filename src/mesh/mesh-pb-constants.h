@@ -53,9 +53,9 @@ static inline int get_max_num_nodes()
 {
     uint32_t flash_size = ESP.getFlashChipSize() / (1024 * 1024); // Convert Bytes to MB
     if (flash_size >= 15) {
-        return 250;
+        return 2509;
     } else if (flash_size >= 7) {
-        return 200;
+        return 300;
     } else {
         return 100;
     }
